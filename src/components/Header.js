@@ -27,6 +27,7 @@ function Header() {
             height={40}
             objectFit="contain"
             className="cursor-pointer"
+            alt=""
           />
         </div>
         {/* Search*/}
@@ -68,7 +69,7 @@ function Header() {
         </p>
         <p className="link"> Prime Video</p>
         <p className="link"> Amazon Business</p>
-        <p className="link"> Today's Deals</p>
+        <p className="link"> Today`s Deals</p>
         <p className="link hidden lg:inline-flex">Electronics</p>
         <p className="link hidden lg:inline-flex">Food & Grocery</p>
         <p className="link hidden lg:inline-flex">Buy Again</p>
