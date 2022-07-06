@@ -31,6 +31,7 @@ function Orders({ orders }) {
                 key={id}
                 id={id}
                 amount={amount}
+                amountShipping={amountShipping}
                 items={items}
                 timestamp={timestamp}
                 images={images}
@@ -65,7 +66,7 @@ export async function getServerSideProps(context) {
     .orderBy("timestamp", "desc")
     .get();
 
-  //get access to Stripe orders
+  //get access to Stripe order
   const orders = await Promise.all(
     stripeOrders.docs.map(async (order) => ({
       id: order.id,
