@@ -31,7 +31,6 @@ function Orders({ orders }) {
                 key={id}
                 id={id}
                 amount={amount}
-                amountShipping={amountShipping}
                 items={items}
                 timestamp={timestamp}
                 images={images}
